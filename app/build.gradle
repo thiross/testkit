@@ -5,12 +5,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    compileSdkVersion sdk.compile
+    buildToolsVersion versions.buildtools
     defaultConfig {
         applicationId "com.tutuur.testkit"
-        minSdkVersion 21
-        targetSdkVersion 29
+        minSdkVersion sdk.min
+        targetSdkVersion sdk.target
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
